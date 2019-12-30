@@ -18,11 +18,11 @@ from django.urls import path, include
 #from django.conf.urls import url, include
 from django.conf import settings
 from django.conf.urls.static import static
-from rest_framework_simplejwt import views as jwt_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', include('uploadapp.api.urls')),
-    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('accounts/',include('accounts.api.urls')),#, jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+
 ]
 
 
