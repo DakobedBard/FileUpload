@@ -23,7 +23,8 @@ urlpatterns = [
     path('register/', include('rest_registration.api.urls')),
     path('upload/', include('uploadapp.api.urls')),
     path('accounts/',include('accounts.api.urls')),#, jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
-
+    path(r'rest-auth/', include('rest_auth.urls')),
+    path(r'rest-auth/registration/', include('rest_auth.registration.urls'))
 ]
 
 

@@ -42,9 +42,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'uploadapp',
     'accounts',
-    'rest_registration',
+    'rest_framework.authtoken',
+    'rest_auth',
     'allauth',
-    'allauth.account'
+    'allauth.account',
+    'rest_auth.registration'
 ]
 SITE_ID=1
 AUTHENTICATION_BACKENDS = (
@@ -148,8 +150,3 @@ CORS_ORIGIN_ALLOW_ALL = True
 #         'rest_framework.permissions.AllowAny',
 #     )
 # }
-REST_REGISTRATION = {
-    'REGISTER_VERIFICATION_ENABLED': False,
-    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
-    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
-}

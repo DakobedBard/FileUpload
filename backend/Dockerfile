@@ -28,6 +28,7 @@ run pip install djangorestframework_simplejwt
 run pip install django-rest-auth
 run pip install --upgrade awscli
 run pip install django-allauth
+run pip install django-rest-auth[with_social]
 run pip install pytest
 run pip install django-cors-headers
 run pip install django-storages
