@@ -16,8 +16,8 @@ const httpOptions:any = {
   providedIn: 'root'
 })
 export class LoginService {
-  apiURL: string = 'http://localhost:8000/api/token';
-  loginURL: string = 'http://localhost:8000/api/auth/login';
+  apiURL: string = 'http://localhost:8000/accounts/token';
+  loginURL: string = 'http://localhost:8000/accounts/login';
   constructor(private  httpClient:HttpClient, private router:Router) { }
   currentUser;
   public loginUser(user):Observable<LoginResponse>{

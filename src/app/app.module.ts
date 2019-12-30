@@ -11,12 +11,14 @@ import { HttpClientModule,HTTP_INTERCEPTORS }    from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service'
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
     DocumentComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
