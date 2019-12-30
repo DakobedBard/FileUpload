@@ -9,10 +9,12 @@ import { DocumentComponent } from './document/document.component';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule,HTTP_INTERCEPTORS }    from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service'
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     DocumentComponent,
+    LoginComponent
     
   ],
   imports: [

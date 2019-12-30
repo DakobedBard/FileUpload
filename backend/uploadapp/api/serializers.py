@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backend.uploadapp.models import File
+from uploadapp.models import File
 
 class FileSerializer(serializers.ModelSerializer):
     class Meta:
