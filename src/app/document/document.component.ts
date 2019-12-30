@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { UploadService } from '../upload.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-document',
+  templateUrl: './document.component.html',
+  styleUrls: ['./document.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class DocumentComponent implements OnInit {
 
   DJANGO_SERVER = 'http://127.0.0.1:8000'
   form: FormGroup;
