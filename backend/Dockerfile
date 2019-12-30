@@ -24,14 +24,14 @@ RUN pip install -r requirements.txt
 run pip install --upgrade youtube-dl
 run pip install --upgrade ipython
 
-run pip install djangorestframework-jwt
 run pip install djangorestframework_simplejwt
 run pip install django-rest-auth
 run pip install --upgrade awscli
+run pip install django-allauth
 run pip install pytest
 run pip install django-cors-headers
 run pip install django-storages
-
+run pip install django-rest-registration
 run pip install djangorestframework
 
 COPY ./entrypoint.sh /usr/src/backend/entrypoint.sh

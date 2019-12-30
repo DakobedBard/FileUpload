@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', include('rest_registration.api.urls')),
     path('upload/', include('uploadapp.api.urls')),
     path('accounts/',include('accounts.api.urls')),#, jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
 
